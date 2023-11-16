@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+#logo {
+    width: 80px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav a {
+    margin: 0px 20px 0px 20px;
+
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#principalText {
+    margin-left: 10%;
+}
+
+#principalText h1 {
+    font-size: 74px;
+    font-weight: 400;
+    
+    margin-top: 100px;
+}
+
+#principalText span {
+    font-weight: 800;
+    color: #057044;
+}
+
+section p {
+    width: 700px;
+    font-size: 20px;
+}
+
+#principalText button {
+    border: none;
+    border-radius: 25px;
+
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #057044;
+    
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    padding: 100px 150px;
+    
+
+    background-color: #057044;
+    border-radius: 100% 0 0 0 ;
+    transition: 0.3s;
+}
+
+aside > img {
+    width: 400px;
+    height: 580px;
+    transform: translate(-150px, -100px);
+    transition: 0.3s;
+}
+
+aside ul {
+    position: absolute;
+    list-style: none;
+    top: 150px;
+    right: 20px;
+}
+
+aside > ul > li {
+    margin: 30px 0px;
+    cursor: pointer;
+}
+
+aside > ul > li > img {
+    filter: invert(1);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer img:hover {
+    transform: translate(-3px, -3px);
+    transition: 0.3s;
+}
+
