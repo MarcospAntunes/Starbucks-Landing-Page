@@ -223,24 +223,21 @@ footer img:hover {
     
     footer img {
         width: 50px;
-        transform: translateY(-50px);
     }
 }
 
 /* Tablet */
-@media screen and (width: 820px) {
-    aside {
-        bottom: 35px;
-    }
 
-    footer {
-        bottom: 35px !important;
-    }
-}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     nav {
         font-size: 24px;
     }
+
+    #principalText p {
+        font-size: 24px;
+        width: 670px;
+    }
+    
     aside {
         padding: 50px 100px;
         
