@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 body, html {
@@ -58,7 +60,7 @@ main {
     color: #057044;
 }
 
-section p {
+#principalText p {
     width: 700px;
     font-size: 20px;
 }
@@ -88,8 +90,8 @@ aside {
     bottom: 0;
     
     padding: 100px 150px;
+    overflow: visible;
     
-
     background-color: #057044;
     border-radius: 100% 0 0 0 ;
     transition: 0.3s;
@@ -133,5 +135,134 @@ footer img {
 footer img:hover {
     transform: translate(-3px, -3px);
     transition: 0.3s;
+}
+
+
+/* Celular */
+@media screen and (max-width: 500px) {
+    * {
+        overflow: scroll;
+    }
+    #logo {
+        margin: 0;
+    }
+
+    header > nav{
+        width: 300px;
+        text-align: center;
+    }
+
+    header > nav a{
+        margin: 5px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #principalText {
+        margin: 0;
+        text-align: center;
+    }
+
+    #principalText h1 {
+        font-size: 32px;
+    }
+
+    #principalText p {
+        font-size: 14px;
+        width: 320px;
+    }
+
+    #principalText button {
+        font-size: 16px;
+    }
+
+    aside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        position: relative;
+        padding: 5px 5px;
+        width: 90vw;
+        height: 400px;
+        margin-top: 150px;
+        margin-bottom: 30px;
+        
+    
+        background-color: #057044;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    
+    aside > img {
+        width: 250px;
+        height: 290px;
+        transform: translateY(-180px);
+        transition: 0.3s;
+    }
+    
+    aside ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+
+        margin-bottom: 20px;
+        bottom: 0;
+        left: 0;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0px;
+        overflow: visible;
+    }
+    
+    footer img {
+        width: 50px;
+        transform: translateY(-50px);
+    }
+}
+
+/* Tablet */
+@media screen and (width: 820px) {
+    aside {
+        bottom: 35px;
+    }
+
+    footer {
+        bottom: 35px !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        font-size: 24px;
+    }
+    aside {
+        padding: 50px 100px;
+        
+        background-color: #057044;
+        border-radius: 100% 0 0 0 ;
+        transition: 0.3s;
+    }
+
+    aside > img {
+        width: 200px;
+        height: 290px;
+        transform: translate(-50px, -100px);
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+    footer > img {
+        width: 80px;
+        
+    }
+    
 }
 
